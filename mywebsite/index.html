@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shinchan - Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffbea;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: auto;
+    }
+
+    .characters-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .character-card {
+      background-color: #fff5cc;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .character-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    form {
+      background-color: #fff5cc;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .gender-options label {
+      display: inline-block;
+    }
+
+    .submit-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff9900;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="shin-chan-banner.jpg"  style="width:500px;" alt="Banner Image 1">
+    <img src="naughtiest-son.jpg" alt="Banner Image 2">
+    <h1>Shinchan - Homepage</h1>
+    <nav>
+      <a href="#trailer">Shinchan: Shiro and the Coal Town Game</a>
+      <a href="#characters">Characters</a>
+      <a href="#favorite">Who's your favorite?</a>
+    </nav>
+  </header>
+
+  <section id="trailer">
+    <h2>Shinchan: Shiro and the Coal Town</h2>
+    <p>(Available on: Nintendo Switch and Windows PC)</p>
+    <video controls>
+      <source src="shinchan-and-the-coal-town.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="characters">
+    <h2>The Characters</h2>
+    <div class="characters-grid">
+      <div class="character-card">
+        <img src="character-shinchan.png" alt="Shinchan">
+        <h3>Shinnosuke Nohara (Shinchan)</h3>
+        <p>The mischievous 5-year-old protagonist known for his hilarious antics and love of choco chips.</p>
+      </div>
+      <div class="character-card">
+        <img src="character-misae.webp" alt="Misae">
+        <h3>Misae Nohara (Mom)</h3>
+        <p>Shinchan’s short-tempered but loving mother, always trying to keep him in line.</p>
+      </div>
+      <div class="character-card">
+        <img src="character-hiroshi.webp" alt="Hiroshi">
+        <h3>Hiroshi Nohara (Dad)</h3>
+        <p>The laid-back father who works at a company and enjoys his evening beer.</p>
+      </div>
+      <div class="character-card">
+        <img src="character-himawari.png" alt="Himawari">
+        <h3>Himawari</h3>
+        <p>The youngest of the Noharas. Loves shiny objects and brand-name goods. Smiles sideways, like Shinchan.</p>
+      </div>
+      <div class="character-card">
+        <img src="character-shiro.png" alt="Shiro">
+        <h3>Yukino Nohara (Shiro)</h3>
+        <p>The family dog — small, fluffy, and sometimes the most sensible member of the household.</p>
+      </div>
+      <div class="character-card">
+        <img src="character-toru-kazama.webp" alt="Kazama">
+        <h3>Toru Kazama</h3>
+        <p>The smart and responsible friend of Shinchan, often the voice of reason in the group.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="favorite">
+    <h2>Who's your favorite?</h2>
+    <form>
+      <label for="fav-character">Who's your favorite character?</label>
+      <select id="fav-character" name="fav-character">
+        <option value="Shinchan">Shinchan</option>
+        <option value="Misae">Misae</option>
+        <option value="Hiroshi">Hiroshi</option>
+        <option value="Himawari">Himawari</option>
+        <option value="Shiro">Shiro</option>
+        <option value="Kazama">Kazama</option>
+      </select>
+
+      <label for="other-character">Character not in the list? Write their name below:</label>
+      <input type="text" id="other-character" name="other-character" placeholder="Enter character name">
+
+      <label for="reason">Why do you like this character?</label>
+      <textarea id="reason" name="reason" rows="3" placeholder="State your reasons in a couple of lines..."></textarea>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <label>Your Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <label for="dob">Your Date of Birth:</label>
+      <input type="text" id="dob" name="dob" placeholder="dd.mm.yyyy">
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Programming4</p>
+    <p>Contact us: <a href="mailto:shinchan-lovers@justlearninghtml.com">shinchan-lovers@justlearninghtml.com</a></p>
+  </footer>
+
+</body>
+</html>
